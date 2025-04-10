@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: grid;
+  place-items: center;
+  background-size: cover;      
+background-repeat: no-repeat; 
+background-position: center; 
+background-attachment: fixed;
+}
+
+h1{
+  font-family: 'Orbitron', sans-serif; /* Looks like a game font */
+  font-size: 50px;
+  text-align: center;
+  color: #00ffe0; /* Futuristic neon blue */
+  text-shadow: 0 0 10px #00ffe0, 0 0 20px #00aaff;
+  background-color: black;
+  padding: 20px 0;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #00ffe0;
+  margin-right: 69px;
+}
+h2{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 36px;
+  color: #ff0044;
+  text-shadow: 2px 2px 0px #000, 4px 4px 0px #00ffff;
+  text-align: center;
+  margin-right: 69px;
+}
+.container {
+  transform: scale(0.9);
+  transform-origin: top center;
+}
+.board{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  border: 2px solid black;
+ width: 630px;
+ background-color: rgb(74, 74, 198);
+ margin-right: 69px;
+}
+
+ul{
+  display: grid;
+  place-items: center;
+  
+}
+
+ul p{
+  margin: 5px;
+  width: 75px;
+  height: 75px;
+  border: 2px solid rgb(221, 210, 210);
+  border-radius: 100px;
+  background-color: white;
+}
+
+ul:hover{
+  cursor: pointer;
+  background-color: rgb(11, 18, 36);
+}
+
+
+@media(max-width:700px){
+  .board{
+      width: 500px;
+  }
+  ul p{
+      width: 55px;
+      height: 55px;
+      
+  }
+  
+}
+@media(max-width:520px){
+  .board{
+      width: 400px;
+  }
+  ul p{
+      width: 40px;
+      height: 40px;
+      
+  }
+  
+}
+@media(max-width:420px){
+  .board{
+      width: 320px;
+  }
+  ul p{
+      width: 30px;
+      height: 30px;
+      
+  }
+  
+}
+
